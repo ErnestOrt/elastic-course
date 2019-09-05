@@ -42,3 +42,8 @@ curl -X POST "localhost:9200/product/default/1/_update" -H 'Content-Type: applic
   "price":95
   }
 }'
+
+curl -X POST "localhost:9200/product/default/1/_update" -H 'Content-Type: application/json' -d'
+{
+  "script": "ctx._source.price += 10"
+}'
