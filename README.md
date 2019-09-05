@@ -34,3 +34,11 @@ curl -X PUT "localhost:9200/product/default/1?pretty" -H 'Content-Type: applicat
 
 
 curl -X GET "localhost:9200/product/default/1"
+
+
+curl -X POST "localhost:9200/product/default/1/_update" -H 'Content-Type: application/json' -d'
+{
+  "doc": {
+  "proce":95
+  }
+}'
