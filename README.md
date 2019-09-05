@@ -39,6 +39,6 @@ curl -X GET "localhost:9200/product/default/1"
 curl -X POST "localhost:9200/product/default/1/_update" -H 'Content-Type: application/json' -d'
 {
   "doc": {
-  "proce":95
+  "price":95
   }
 }'
