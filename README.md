@@ -51,3 +51,6 @@ curl -X POST "localhost:9200/product/default/1/_update" -H 'Content-Type: applic
 
 
 curl -X POST "localhost:9200/product/default/_bulk?pretty" -H 'Content-Type: application/json' --data-binary "@/Users/ernestortuno/Documents/courses/elastic/test-data.json"
+
+curl -X GET "localhost:9200/_cat/indices?v"
+
