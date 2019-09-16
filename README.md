@@ -47,3 +47,7 @@ curl -X POST "localhost:9200/product/default/1/_update" -H 'Content-Type: applic
 {
   "script": "ctx._source.price += 10"
 }'
+
+
+
+curl -X POST "localhost:9200/product/default/_bulk?pretty" -H 'Content-Type: application/json' --data-binary "@/Users/ernestortuno/Documents/courses/elastic/test-data.json"
